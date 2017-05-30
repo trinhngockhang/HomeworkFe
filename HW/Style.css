@@ -5,6 +5,7 @@
   .menu {
     background: #D5B0AC;
     text-align: center;
+    position: relative;
   }
 
   span {
@@ -16,15 +17,24 @@
   }
 
   .menu_vertical span {
+    margin-top: 1px;
+    background: #D5B0AC;
+    display: none;
+  }
+
+  .menu span:hover .menu_vertical span{
     display: block;
   }
 
   .menu_vertical {
     width: 100px;
+    background: transparent;
+    position: absolute;
   }
 
   span:hover {
     color: #FFFFFF;
     background: #9CD08F;
     cursor: pointer;
+
   }
